@@ -24,6 +24,10 @@ $('a').click(function() {
     return false;
 });
 
+
+
+
+
 function trocaNav(navbar, posicao, itensmenu) {
     if (posicao == 0) {
         navbar.css("background-color", "transparent");
@@ -34,6 +38,26 @@ function trocaNav(navbar, posicao, itensmenu) {
     }
 }
 
+var bg = "white", fonte = "black", borda = "black";
+
+    if (posicao == 0) {
+      fonte = "white";
+//       borda = "white";
+       bg = "transparent";
+    }
+
+    else{
+          fonte = "black";
+          bg = "white";
+
+    }
+
+
+
+
+
+
+    
 
 $("#formcontato").submit(function(event) {
     event.preventDefault();
